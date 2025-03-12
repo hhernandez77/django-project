@@ -17,34 +17,43 @@ This is a simple Task Management program that allows users to create, view, upda
 
 
 ## Installation
-1. Install Python 3.12.2 in your local machine.
-2. Create folder 'django-project' in your local machine
-3. Navigate to the folder created in Git Bash and run this code to create your virtual environment:
-```bash
+
+1. Install Python 3.12.2 on your local machine.
+2. Create a folder named `django-project` on your local machine.
+3. Navigate to the folder in Git Bash and run the following code to create your virtual environment:
+
+    ```bash
     py -m venv venv
-```
-4. Activate your virtual environment
-```bash
+    ```
+
+4. Activate your virtual environment:
+
+    ```bash
     source venv/Scripts/activate
-```
-6. Navigate to your venv environment
-```bash
-    cd venv
-```
-5. Install django
-```bash
+    ```
+
+5. Install Django:
+
+    ```bash
     pip install django
-```
-6. Clone the repository in your local machine. You can either use the github desktop or simply run this code in git bash.
-```bash
+    ```
+
+6. Clone the repository to your local machine. You can either use GitHub Desktop or run the following command in Git Bash:
+
+    ```bash
     git clone https://github.com/hhernandez77/django-project.git
-```
-7. Navigate to 'taskmanager' folder
-```bash
+    ```
+
+7. Navigate to the `taskmanager` folder:
+
+    ```bash
     cd taskmanager
-```
-8. Run the server
-```bash
+    ```
+
+8. Run the server:
+
+    ```bash
     python manage.py runserver
-```
-9. Open http://127.0.0.1:8000/ in your web browser
+    ```
+
+9. Open [http://127.0.0.1:8000/](http://127.0.0.1:8000/) in your web browser.
