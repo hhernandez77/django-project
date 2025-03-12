@@ -18,7 +18,9 @@ This is a simple Task Management program that allows users to create, view, upda
 1. Install Python 3.12.2 in your local machine.
 2. Create folder django-project in your local machine
 3. Navigate to the folder created in Git Bash and run this code to create your virtual environment:
-    -py -m venv Python_Testing
+```bash
+py -m venv Python_Testing
+```
 4. Activate your virtual environment
    -source Python_Testing/Scripts/activate
 5. Install django
