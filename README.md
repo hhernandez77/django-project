@@ -4,15 +4,17 @@ This is a simple Task Management program that allows users to create, view, upda
 
 ## Features
 ### User Authentication
-    * Authentication ensures that each user can manage only their task
-    * Register an account and login to access the task management system.
+- **Authentication** ensures that each user can manage only their tasks.
+- **Register an account** and log in to access the task management system.
+
 
 ### Task Management
-    * Create a Task: Users can create tasks by providing a title, description and date.<>
-    * View Task: Users can view a list of all their created task.
-    * Read Task Details: Users can view the details of a specific task,  including its title, description, and status.
-    * Update a Task: Users can update an existing task's details
-    * Delete a Task: Users can delete any of their created tasks.
+- **Create a Task**: Users can create tasks by providing a title, description, and date.
+- **View Task**: Users can view a list of all their created tasks.
+- **Read Task Details**: Users can view the details of a specific task, including its title, description, and status.
+- **Update a Task**: Users can update an existing task's details.
+- **Delete a Task**: Users can delete any of their created tasks.
+
 
 ## Installation
 1. Install Python 3.12.2 in your local machine.
