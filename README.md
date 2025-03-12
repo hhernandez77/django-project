@@ -14,12 +14,13 @@ This is a simple Task Management program that allows users to create, view, upda
     * Update a Task: Users can update an existing task's details
     * Delete a Task: Users can delete any of their created tasks.
 
-Installation
+## Installation
 1. Install Python 3.12.2 in your local machine.
 2. Create folder django-project in your local machine
-3. Navigate to the folder created in git bash and run this code to create your virtual  
-   environment.
-   -py -m venv Python_Testing
+3. Navigate to the folder created in Git Bash and run this code to create your virtual environment:
+```bash
+py -m venv Python_Testing
+```
 4. Activate your virtual environment
    -source Python_Testing/Scripts/activate
 5. Install django
