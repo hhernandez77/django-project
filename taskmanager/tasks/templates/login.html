@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .register-link {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .register-link a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+
+        .error-message {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #f5c6cb;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Login</h2>
+
+    <!-- Display error message for incorrect credentials -->
+    {% if form.non_field_errors %}
+        <div class="error-message">
+            <strong>Error:</strong> {{ form.non_field_errors }}
+        </div>
+    {% endif %}
+
+    <form method="POST">
+        {% csrf_token %}
+        
+        <!-- Username Field -->
+        <div class="form-group">
+            <label for="id_username">Username</label>
+            {{ form.username }}
+        </div>
+
+        <!-- Password Field -->
+        <div class="form-group">
+            <label for="id_password">Password</label>
+            {{ form.password }}
+        </div>
+
+        <!-- Login Button -->
+        <button type="submit">Login</button>
+    </form>
+
+    <!-- Registration Link -->
+    <div class="register-link">
+        <p>Don't have an account? <a href="{% url 'register' %}">Register here</a></p>
+    </div>
+</div>
+
+</body>
+</html>
