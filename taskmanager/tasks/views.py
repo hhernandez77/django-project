@@ -29,6 +29,9 @@ def logout_view(request):
     logout(request)
     return redirect('login')
 
+def dashboard(request):
+    return render(request, 'dashboard.html')
+
 def task_list(request):
     tasks = Task.objects.all()
     return render(request, 'tasks/task_list.html', {'tasks': tasks})
