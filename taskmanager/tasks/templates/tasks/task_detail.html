@@ -8,7 +8,9 @@
     <style>
         body {
             background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
         }
+
         .task-container {
             max-width: 800px;
             margin: 0 auto;
@@ -18,49 +20,95 @@
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
             margin-top: 40px;
         }
+
         h1 {
             color: #343a40;
             margin-bottom: 20px;
+            font-size: 2rem;
         }
+
         .task-description {
             font-size: 1.2rem;
             color: #555;
             margin-bottom: 30px;
         }
+
         .task-status {
             font-weight: bold;
-            color: #2ecc71;
+            font-size: 1.1rem;
         }
+
         .task-status.completed {
             color: #2ecc71;
         }
+
         .task-status.not-completed {
-            color: #e74c3c; 
+            color: #e74c3c;
         }
+
         .task-due-date {
             font-weight: bold;
             color: #f39c12;
             margin-top: 20px;
+            font-size: 1.1rem;
         }
+
         .btn-action {
             display: inline-block;
-            margin-top: 10px;
-            padding: 10px 15px;
+            margin-top: 15px;
+            padding: 12px 20px;
             background-color: #007bff;
             color: white;
             border-radius: 5px;
             text-decoration: none;
             font-size: 16px;
+            transition: background-color 0.3s;
         }
+
         .btn-action:hover {
             background-color: #0056b3;
         }
+
         .btn-delete {
             background-color: #e74c3c;
             margin-left: 15px;
         }
+
         .btn-delete:hover {
             background-color: #c0392b;
+        }
+
+        .btn-action, .btn-delete {
+            width: auto;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 767px) {
+            .task-container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .task-description {
+                font-size: 1rem;
+            }
+
+            .task-status, .task-due-date {
+                font-size: 1rem;
+            }
+
+            .btn-action {
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .btn-delete {
+                width: 100%;
+                margin-top: 10px;
+            }
         }
     </style>
 </head>
